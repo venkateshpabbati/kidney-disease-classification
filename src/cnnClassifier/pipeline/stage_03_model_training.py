@@ -20,6 +20,8 @@ class ModelTrainingPipeline:
         training.train_valid_generator()
         training.train()
 
+# Main function
+
 if __name__ == '__main__':
     try:
         logger.info(f"*******************")
