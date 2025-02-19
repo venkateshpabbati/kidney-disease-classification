@@ -6,7 +6,7 @@ from cnnClassifier import logger
 
 STAGE_NAME = "Training"
 
-
+### Training Pipeline
 
 class ModelTrainingPipeline:
     def __init__(self):
@@ -19,8 +19,6 @@ class ModelTrainingPipeline:
         training.get_base_model()
         training.train_valid_generator()
         training.train()
-
-
 
 if __name__ == '__main__':
     try:
