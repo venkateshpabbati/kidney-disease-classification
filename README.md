@@ -82,10 +82,20 @@ mlflow ui
 ### Using DagsHub for Remote Tracking
 ```bash
 export MLFLOW_TRACKING_URI=https://dagshub.com/venkateshpabbati/Kidney-Disease-Classification.mlflow
-export MLFLOW_TRACKING_USERNAME=entbappy
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_USERNAME=username 
+export MLFLOW_TRACKING_PASSWORD=password
 ```
 
+### Using Mlflow tracking
+```bash
+import dagshub
+dagshub.init(repo_owner='venkateshpabbati', repo_name='Kidney-Disease-Classification', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+```
 ---
 
 ## Version Control with DVC
