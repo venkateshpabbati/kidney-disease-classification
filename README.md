@@ -34,7 +34,7 @@ To ensure smooth development and deployment, follow the steps below:
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/venkateshpabbati/Kidney-Disease-Classification
+git clone https://github.com/venkateshpabbati/Kidney-Disease-Classification.git
 cd Kidney-Disease-Classification
 ```
 
@@ -81,11 +81,21 @@ mlflow ui
 
 ### Using DagsHub for Remote Tracking
 ```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/entbappy/Kidney-Disease-Classification-MLflow-DVC.mlflow
-export MLFLOW_TRACKING_USERNAME=entbappy
-export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
+export MLFLOW_TRACKING_URI=https://dagshub.com/venkateshpabbati/Kidney-Disease-Classification.mlflow
+export MLFLOW_TRACKING_USERNAME=username 
+export MLFLOW_TRACKING_PASSWORD=password
 ```
 
+### Using Mlflow tracking
+```bash
+import dagshub
+dagshub.init(repo_owner='venkateshpabbati', repo_name='Kidney-Disease-Classification', mlflow=True)
+
+import mlflow
+with mlflow.start_run():
+  mlflow.log_param('parameter name', 'value')
+  mlflow.log_metric('metric name', 1)
+```
 ---
 
 ## Version Control with DVC
