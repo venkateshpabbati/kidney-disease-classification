@@ -34,7 +34,7 @@ To ensure smooth development and deployment, follow the steps below:
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/venkateshpabbati/Kidney-Disease-Classification
+git clone https://github.com/venkateshpabbati/Kidney-Disease-Classification.git
 cd Kidney-Disease-Classification
 ```
 
