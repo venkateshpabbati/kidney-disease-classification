@@ -19,7 +19,7 @@
 Clone the repository
 
 ```bash
-https://github.com/venkateshpabbati/Kidney-Disease-Classification
+git clone https://github.com/venkateshpabbati/Kidney-Disease-Classification
 ```
 ### STEP 01- Create a virtual environment after opening the repository
 
